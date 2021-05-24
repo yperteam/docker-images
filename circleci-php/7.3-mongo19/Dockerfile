@@ -8,3 +8,4 @@ RUN   curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - \
       && sudo pecl install mongodb-1.9.0 \
       && sudo docker-php-ext-enable mongodb \
       && sudo docker-php-ext-install gd
+      && sudo composer self-update
