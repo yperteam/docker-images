@@ -10,8 +10,5 @@ RUN   curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - \
       && sudo docker-php-ext-install gd \
       && sudo composer self-update
       
-RUN   python --version
-RUN   python3 --version
 RUN   ls /usr/bin/python*
-RUN   update-alternatives  --set python /usr/bin/python3
-RUN   python --version
+RUN   update-alternatives  --set python /usr/bin/python3.7
