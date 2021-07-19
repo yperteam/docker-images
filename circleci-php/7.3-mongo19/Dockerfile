@@ -11,5 +11,5 @@ RUN   curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - \
       && sudo composer self-update
       
 RUN   ls /usr/bin/python*
-RUN   update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
-RUN   update-alternatives --install /usr/bin/python python /usr/bin/python3.7 2
+RUN   sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
+RUN   sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 2
