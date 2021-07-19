@@ -7,7 +7,7 @@ RUN   curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - \
       && sudo apt-get update && sudo apt-get upgrade && sudo apt-get install -y yarn ruby-sass locales-all \
       && sudo pecl install mongodb-1.9.0 \
       && sudo docker-php-ext-enable mongodb \
-      && sudo docker-php-ext-install gd
+      && sudo docker-php-ext-install gd \
       && sudo composer self-update
       
 RUN   python --version
