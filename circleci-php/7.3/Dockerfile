@@ -1,4 +1,4 @@
-FROM  circleci/php:7.3
+FROM  cimg/php:7.3.31
 
 RUN   curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - \
       && sudo apt-get update && sudo apt-get install -y build-essential apt-transport-https curl ca-certificates gnupg2 apt-utils nodejs libpng-dev libcurl4-openssl-dev pkg-config libssl-dev \
