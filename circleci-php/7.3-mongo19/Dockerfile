@@ -7,7 +7,7 @@ RUN   curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - \
       && sudo apt-get update && sudo apt-get upgrade && sudo apt-get install -y yarn ruby-sass locales-all \
       && sudo pecl install mongodb-1.9.0 \
       && php --ini && php --version \
-      && echo "extension=mongodb.so" | sudo tee -a /etc/php.d/circleci.ini \
+      && echo "extension=mongodb.so" | sudo tee -a /etc/php/7.3/cli/php.ini \
       && sudo composer self-update
       
 RUN   ls /usr/bin/python*
