@@ -6,8 +6,7 @@ RUN   curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - \
       && echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list \
       && sudo apt-get update && sudo apt-get upgrade && sudo apt-get install -y yarn ruby-sass locales-all \
       && sudo pecl install mongodb-1.9.0 \
-      && sudo docker-php-ext-enable mongodb \
-      && sudo docker-php-ext-install gd \
+      && echo 'extension=mongodb.so' | sudo tee -a /etc/php.d/circleci.ini \
       && sudo composer self-update
       
 RUN   ls /usr/bin/python*
