@@ -10,6 +10,6 @@ RUN   curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - \
       && echo "extension=mongodb.so" | sudo tee -a /etc/php/7.3/cli/php.ini \
       && sudo composer self-update
       
-#RUN   ls /usr/bin/python*
+RUN   ls /usr/bin/python*
 #RUN   sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
 #RUN   sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7 2
