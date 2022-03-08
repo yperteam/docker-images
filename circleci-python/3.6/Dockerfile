@@ -1,4 +1,4 @@
-FROM  circleci/python:3.6.4
+FROM  cimg/python:3.6.15
 
 RUN   sudo apt-get update \
       && sudo apt-get install locales-all -y
