@@ -1,4 +1,4 @@
-FROM  cimg/python:3.7.6
+FROM  cimg/python:3.7.12
 
 RUN   sudo apt-get update \
       && sudo apt-get install locales-all -y
