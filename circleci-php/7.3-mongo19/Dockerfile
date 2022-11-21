@@ -1,6 +1,6 @@
 FROM  cimg/php:7.3.31
 
-RUN   curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - \
+RUN   curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash - \
       && sudo apt-get update && sudo apt-get install -y build-essential apt-transport-https curl ca-certificates gnupg2 apt-utils nodejs libpng-dev libcurl4-openssl-dev pkg-config libssl-dev python3 python3-venv python3-pip \
       && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - \
       && echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list \
